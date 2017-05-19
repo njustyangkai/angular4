@@ -5,19 +5,23 @@
         </div>
         <nav class="px-nav">
             <a class="px-nav-link"
-               role="button">
+               role="button"
+               (mouseenter)="show=true">
                 <span>按钮1</span>
             </a>
             <a class="px-nav-link"
-               role="button">
+               role="button"
+               (mouseenter)="show=true">
                 <span>按钮1</span>
             </a>
             <a class="px-nav-link"
-               role="button">
+               role="button"
+               (mouseenter)="show=true">
                 <span>按钮1</span>
             </a>
             <a class="px-nav-link"
-               role="button">
+               role="button"
+               (mouseenter)="show=true">
                 <span>按钮1</span>
             </a>
             <a class="px-nav-link"
@@ -25,5 +29,14 @@
                 <span>按钮1</span>
             </a>
         </nav>
+        <div class="px-nav-content-wrapper"
+             (mouseleave)="show=false"
+             [class.open]="show">
+            <div class="px-nav-content">
+                <div class="px-nav-content-section"
+                     [class.open]="show">
+                </div>
+            </div>
+        </div>
     </div>
 </div>

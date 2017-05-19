@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 
 export class HeadComponent {
-
+  show:boolean = false;
 }

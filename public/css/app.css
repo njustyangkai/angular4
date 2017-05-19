@@ -10,6 +10,7 @@ body {
 }
 
 .px-head {
+    position: relative;
 }
 
 .px-head .logo {
@@ -32,11 +33,47 @@ body {
     padding: 10px;
     margin: 0 10px;
     border-bottom: 2px solid transparent;
-    transition: border-color .3s,color .3s;
+    transition: border-color .3s, color .3s;
 }
 
 .px-nav-link:hover {
     border-bottom: 2px solid #cb3034;
     color: #e22835;
+}
+
+.px-nav-content-wrapper {
+    background-color: #f1f1f1;
+    padding: 0 15px;
+    position: absolute;
+    transform: translate3d(0, -105%, 0);
+    transition: all .4s cubic-bezier(.2, 1, .2, 1);
+    width: 100%;
+    z-index: 899;
+    overflow: hidden;
+    opacity: 0;
+    top: 60px;
+}
+
+.px-nav-content-wrapper.open {
+    height: 350px;
+    transform: translateZ(0);
+    opacity: 1;
+}
+
+.px-nav-content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%!important;
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.px-nav-content-section.open {
+    display: block;
+    transform: translateZ(0);
+    margin-top: 0 \9;
+    background-color: #f1f1f1;
+    z-index: 91;
 }
 
