@@ -1,7 +1,42 @@
-main {
-    padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-    display: block;
+body {
+    position: relative;
+    line-height: 1 !important;
+    font-size: 12px;
 }
+
+.px-head-wrapper {
+    position: relative;
+    padding: 20px 50px 0 50px;
+}
+
+.px-head {
+}
+
+.px-head .logo {
+    float: left;
+    width: 30%;
+}
+
+.px-head .logo b {
+    background-image: url(../images/angular.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 37px;
+    font-size: 30px;
+    padding-left: 37px;
+}
+
+.px-nav-link {
+    float: left;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .3s,color .3s;
+}
+
+.px-nav-link:hover {
+    border-bottom: 2px solid #cb3034;
+    color: #e22835;
+}
+
