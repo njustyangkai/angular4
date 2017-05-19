@@ -30,8 +30,14 @@ module.exports = {
                 loader: 'html-loader'
             },
             {
-                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-                loader: 'file-loader?name=assets/[name].[hash].[ext]'
+                test: /\.(png|jpe?g|gif|ico|svg)$/,
+                include: helpers.root('public', 'images'),
+                loader: 'file-loader?name=public/images/[name].[hash].[ext]'
+            },
+            {
+                test: /\.(svg|woff|woff2|ttf|eot)$/,
+                include: helpers.root('public', 'fonts'),
+                loader: 'file-loader?name=public/fonts/[name].[hash].[ext]'
             },
             {
                 test: /\.css$/,
