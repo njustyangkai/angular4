@@ -54,7 +54,7 @@ body {
     top: 60px;
 }
 
-.px-nav-content-wrapper.open {
+.showing .px-nav-content-wrapper {
     height: 350px;
     transform: translateZ(0);
     opacity: 1;
@@ -70,9 +70,7 @@ body {
 }
 
 .px-nav-content-section.open {
-    display: block;
     transform: translateZ(0);
-    margin-top: 0 \9;
     background-color: #f1f1f1;
     z-index: 91;
 }

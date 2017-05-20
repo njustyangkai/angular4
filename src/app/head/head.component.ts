@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
 })
 
 export class HeadComponent {
-  show:boolean = false;
+  isShow:boolean = false;
+  body:any = document.getElementsByTagName('body')[0];
+
+  constructor() {
+  }
+
+  show(e:any) {
+    this.isShow = true;
+    this.body.classList.add('showing');
+
+  }
+
+  hide() {
+    this.isShow = false;
+    this.body.classList.remove('showing');
+  }
 }
